@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/bin/www"
   },
-  "dockerRegistry": "software-factory.clevertoday.xyz",
+  "dockerRegistry": "bargenson",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "^0.11.3",
