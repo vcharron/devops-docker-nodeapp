@@ -21,4 +21,5 @@ version: '2'
                   ports:
                         - "8008:80"
   networks:
-           dockerlab:
+    dockerlab:
+      driver: bridge
