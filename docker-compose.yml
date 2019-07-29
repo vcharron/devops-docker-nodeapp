@@ -6,14 +6,16 @@
                           - dockerlab
           nodeapp:
                   build: /home/student/docker/devops-docker-nodeapp
-                  depends_on: redis
+                  depends_on: 
+                            - redis
                   networks:
                           - dockerlab
                   environment: 
                               - REDIS_HOST=redis
           frontend:
                   build: /home/student/docker/devops-docker-frontend
-                  depends_on: nodeapp
+                  depends_on: 
+                            - nodeapp
                   networks:
                           - dockerlab
                   ports:
