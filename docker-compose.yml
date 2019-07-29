@@ -1,5 +1,5 @@
 version: '2'
-  services:
+services:
           redis:
                   image: redis
                   networks:
@@ -20,6 +20,6 @@ version: '2'
                           - dockerlab
                   ports:
                         - "8008:80"
-  networks:
-    dockerlab:
-      driver: bridge
+networks:
+        dockerlab:
+                  driver: bridge
