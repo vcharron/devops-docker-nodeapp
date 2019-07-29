@@ -21,4 +21,4 @@
                   ports:
                         - "8008:80"
           networks:
-                  dockerlab
+                  dockerlab:
