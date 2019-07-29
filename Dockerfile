@@ -15,6 +15,6 @@ EXPOSE 8080
 
 #TODO script
 
-ENTRYPOINT ["entry.sh"]
+#ENTRYPOINT ["entry.sh"]
 
 CMD ["start"]
