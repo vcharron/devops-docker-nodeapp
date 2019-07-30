@@ -1,11 +1,11 @@
 version: '2'
 services:
           redis:
-                  image: redis
+                  image: myredis
                   networks:
                           - dockerlab
           nodeapp:
-                  build: /home/student/docker/devops-docker-nodeapp
+                  image: mynodeapp
                   depends_on: 
                             - redis
                   networks:
@@ -13,7 +13,7 @@ services:
                   environment: 
                               - REDIS_HOST=redis
           frontend:
-                  build: /home/student/docker/devops-docker-frontend
+                  image: myfrontend
                   depends_on: 
                             - nodeapp
                   networks:
