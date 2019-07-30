@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: frontend-deployment
 spec:
   selector:
     matchLabels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: edgendadevops/devops-docker-frontend
+        image: edgendadevops/devops-docker-frontend:0
         ports:
         - containerPort: 80
