@@ -18,3 +18,5 @@ spec:
         env:
         - name: REDIS_HOST
           value: redis
+        ports:
+        - containerPort: 8080
