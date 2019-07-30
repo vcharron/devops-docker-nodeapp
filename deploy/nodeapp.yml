@@ -15,6 +15,6 @@ spec:
       containers:
       - name: nodeapp
         image: edgendadevops/devops-docker-nodeapp:0
-      env:
-      - name: REDIS_HOST
-        value: redis
+        env:
+        - name: REDIS_HOST
+          value: redis
